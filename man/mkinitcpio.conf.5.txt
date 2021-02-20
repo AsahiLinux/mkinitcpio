@@ -55,7 +55,7 @@ Variables
 	Defines a program to filter the generated image through. The kernel
 	understands the compression formats yielded by the *zstd*, *gzip*, *bzip2*,
 	*lz4*, *lzop*, *lzma*, and *xz* compressors. If unspecified, this setting
-	defaults to *zstd* compression. In order to create an uncompressed image,
+	defaults to *gzip* compression. In order to create an uncompressed image,
 	define this variable as *cat*.
 +
 It's not hard to realize that a filter such as a *tac* or *rev* will cause

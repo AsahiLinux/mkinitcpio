@@ -670,7 +670,7 @@ if [[ $_optgenimg ]]; then
         die 'Unable to write to %s' "$_optgenimg"
     fi
 
-    _optcompress=${_optcompress:-${COMPRESSION:-zstd}}
+    _optcompress=${_optcompress:-${COMPRESSION:-gzip}}
     if ! type -P "$_optcompress" >/dev/null; then
         warning "Unable to locate compression method: %s" "$_optcompress"
         _optcompress=cat
